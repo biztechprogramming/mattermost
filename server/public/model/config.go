@@ -125,10 +125,10 @@ const (
 	ServiceSettingsDefaultMaxURLLength           = 2048
 	ServiceSettingsMaxUniqueReactionsPerPost     = 500
 
-	TeamSettingsDefaultSiteName              = "Mattermost"
+	TeamSettingsDefaultSiteName              = "The Alley"
 	TeamSettingsDefaultMaxUsersPerTeam       = 50
 	TeamSettingsDefaultCustomBrandText       = ""
-	TeamSettingsDefaultCustomDescriptionText = ""
+	TeamSettingsDefaultCustomDescriptionText = "Where tennis players rally — conversation, strategy, and community all in one court"
 	TeamSettingsDefaultUserStatusAwayTimeout = 300
 
 	SqlSettingsDefaultDataSource = "postgres://mmuser:mostest@localhost/mattermost_test?sslmode=disable&connect_timeout=10&binary_parameters=yes"

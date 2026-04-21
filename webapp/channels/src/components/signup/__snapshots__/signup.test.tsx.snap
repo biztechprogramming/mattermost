@@ -19,7 +19,7 @@ exports[`components/signup/Signup should match snapshot for all signup options e
         <p
           class="signup-body-message-subtitle"
         >
-          Create your Mattermost account to start collaborating with your team
+          Join The Alley — the home court for tennis conversation.
         </p>
       </div>
       <div
@@ -165,7 +165,7 @@ exports[`components/signup/Signup should match snapshot for all signup options e
         <p
           class="signup-body-message-subtitle"
         >
-          Create your Mattermost account to start collaborating with your team
+          Join The Alley — the home court for tennis conversation.
         </p>
       </div>
       <div
@@ -460,7 +460,7 @@ exports[`components/signup/Signup should match snapshot for all signup options e
         <p
           class="signup-body-message-subtitle"
         >
-          Create your Mattermost account to start collaborating with your team
+          Join The Alley — the home court for tennis conversation.
         </p>
       </div>
       <div

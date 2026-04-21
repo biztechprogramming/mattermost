@@ -67,13 +67,13 @@ function LaunchingWorkspace(props: Props) {
             <Title>
                 <FormattedMessage
                     id='onboarding_wizard.launching_workspace.title'
-                    defaultMessage='Launching your workspace now'
+                    defaultMessage='Stepping onto the court now'
                 />
             </Title>
             <Description>
                 <FormattedMessage
                     id='onboarding_wizard.launching_workspace.description'
-                    defaultMessage='It’ll be ready in a moment'
+                    defaultMessage=’Your court is almost ready’
                 />
             </Description>
         </div>
