@@ -5,13 +5,13 @@ exports[`/components/common/SiteNameAndDescription should match snapshot, defaul
   <h1
     id="site_name"
   >
-    Mattermost
+    The Alley
   </h1>
   <h3
     class="color--light"
     id="site_description"
   >
-    All team communication in one place, searchable and accessible anywhere
+    Where tennis players rally — conversation, strategy, and community all in one court
   </h3>
 </div>
 `;

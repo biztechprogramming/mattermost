@@ -8,11 +8,11 @@ type Props = {
     customDescriptionText?: string;
     siteName: string | undefined;
 };
-const SiteNameAndDescription = ({customDescriptionText, siteName = 'Mattermost'}: Props) => {
+const SiteNameAndDescription = ({customDescriptionText, siteName = 'The Alley'}: Props) => {
     const description = customDescriptionText || (
         <FormattedMessage
             id='web.root.signup_info'
-            defaultMessage='All team communication in one place, searchable and accessible anywhere'
+            defaultMessage='Where tennis players rally — conversation, strategy, and community all in one court'
         />
     );
 

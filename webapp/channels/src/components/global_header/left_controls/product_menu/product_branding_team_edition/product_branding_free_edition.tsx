@@ -7,8 +7,6 @@ import styled from 'styled-components';
 
 import {getLicense} from 'mattermost-redux/selectors/entities/general';
 
-import Logo from 'components/common/svg_images_components/logo_dark_blue_svg';
-
 import {LicenseSkus} from 'utils/constants';
 
 const ProductBrandingFreeEditionContainer = styled.span`
@@ -20,10 +18,14 @@ const ProductBrandingFreeEditionContainer = styled.span`
     }
 `;
 
-const StyledLogo = styled(Logo)`
-    path {
-        fill: rgba(var(--sidebar-text-rgb), 0.75);
-    }
+const BrandName = styled.span`
+    color: rgba(var(--sidebar-text-rgb), 0.75);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    white-space: nowrap;
 `;
 
 const Badge = styled.span`
@@ -48,15 +50,12 @@ const ProductBrandingFreeEdition = (): JSX.Element => {
     if (license?.SkuShortName === LicenseSkus.Entry) {
         badgeText = 'ENTRY EDITION';
     } else if (license?.IsLicensed === 'false') {
-        badgeText = 'TEAM EDITION';
+        badgeText = 'CLUB EDITION';
     }
 
     return (
         <ProductBrandingFreeEditionContainer tabIndex={-1}>
-            <StyledLogo
-                width={116}
-                height={20}
-            />
+            <BrandName>{'The Alley'}</BrandName>
             <Badge>{badgeText}</Badge>
         </ProductBrandingFreeEditionContainer>
     );

@@ -10,14 +10,14 @@ import {renderWithContext, screen} from 'tests/react_testing_utils';
 describe('/components/common/SiteNameAndDescription', () => {
     const baseProps = {
         customDescriptionText: '',
-        siteName: 'Mattermost',
+        siteName: 'The Alley',
     };
 
     test('should match snapshot, default', () => {
         const {container} = renderWithContext(<SiteNameAndDescription {...baseProps}/>);
         expect(container).toMatchSnapshot();
         expect(screen.getByRole('heading', {level: 1})).toHaveTextContent(baseProps.siteName);
-        expect(screen.getByText('All team communication in one place, searchable and accessible anywhere')).toBeInTheDocument();
+        expect(screen.getByText('Where tennis players rally — conversation, strategy, and community all in one court')).toBeInTheDocument();
     });
 
     test('should match snapshot, with custom site name and description', () => {

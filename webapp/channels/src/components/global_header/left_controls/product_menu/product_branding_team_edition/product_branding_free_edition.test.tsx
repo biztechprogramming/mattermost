@@ -23,17 +23,16 @@ describe('ProductBrandingFreeEdition', () => {
             },
         };
 
-        const {container} = renderWithContext(
+        renderWithContext(
             <ProductBrandingFreeEdition {...baseProps}/>,
             state,
         );
 
         expect(screen.getByText('ENTRY EDITION')).toBeInTheDocument();
-        const logoElement = container.querySelector('svg');
-        expect(logoElement).toBeInTheDocument();
+        expect(screen.getByText('The Alley')).toBeInTheDocument();
     });
 
-    test('should show TEAM EDITION for unlicensed', () => {
+    test('should show CLUB EDITION for unlicensed', () => {
         const state = {
             entities: {
                 general: {
@@ -45,14 +44,13 @@ describe('ProductBrandingFreeEdition', () => {
             },
         };
 
-        const {container} = renderWithContext(
+        renderWithContext(
             <ProductBrandingFreeEdition {...baseProps}/>,
             state,
         );
 
-        expect(screen.getByText('TEAM EDITION')).toBeInTheDocument();
-        const logoElement = container.querySelector('svg');
-        expect(logoElement).toBeInTheDocument();
+        expect(screen.getByText('CLUB EDITION')).toBeInTheDocument();
+        expect(screen.getByText('The Alley')).toBeInTheDocument();
     });
 
     test('should show empty badge for Professional license', () => {
@@ -74,7 +72,7 @@ describe('ProductBrandingFreeEdition', () => {
 
         // Should not show any edition badge
         expect(screen.queryByText('ENTRY EDITION')).not.toBeInTheDocument();
-        expect(screen.queryByText('TEAM EDITION')).not.toBeInTheDocument();
+        expect(screen.queryByText('CLUB EDITION')).not.toBeInTheDocument();
         expect(screen.queryByText('PROFESSIONAL EDITION')).not.toBeInTheDocument();
     });
 
@@ -97,7 +95,7 @@ describe('ProductBrandingFreeEdition', () => {
 
         // Should not show any edition badge
         expect(screen.queryByText('ENTRY EDITION')).not.toBeInTheDocument();
-        expect(screen.queryByText('TEAM EDITION')).not.toBeInTheDocument();
+        expect(screen.queryByText('CLUB EDITION')).not.toBeInTheDocument();
         expect(screen.queryByText('ENTERPRISE EDITION')).not.toBeInTheDocument();
     });
 
@@ -117,6 +115,6 @@ describe('ProductBrandingFreeEdition', () => {
 
         // Should not show any edition badge when license object is empty
         expect(screen.queryByText('ENTRY EDITION')).not.toBeInTheDocument();
-        expect(screen.queryByText('TEAM EDITION')).not.toBeInTheDocument();
+        expect(screen.queryByText('CLUB EDITION')).not.toBeInTheDocument();
     });
 });
